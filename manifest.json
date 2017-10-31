@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "CryptoZak",
+    "description": "Crypto prices in EU and USD",
+    "version": "1.0",
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "icons": { "16": "12.png",
+               "48": "48.png",
+              "128": "128.png" },
+    "permissions": [],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "web_accessible_resources": [
+        "assets/css/*",
+        "assets/js/*",
+        "assets/fonts/*"
+    ]
+}
