@@ -1,19 +1,21 @@
 {
     "manifest_version": 2,
-    "name": "CryptoZak",
-    "description": "Crypto prices in EU and USD",
+    "name": "Booba Mode",
+    "description": "Booba background",
     "version": "1.0",
     "browser_action": {
-        "default_popup": "index.html"
+        "default_popup": "popup.html"
     },
-    "icons": { "16": "12.png",
-               "48": "48.png",
-              "128": "128.png" },
-    "permissions": [],
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-    "web_accessible_resources": [
-        "assets/css/*",
-        "assets/js/*",
-        "assets/fonts/*"
-    ]
+    "icons": {
+        "16": "favicon",
+        "48": "icon-48-mdpi",
+        "128": "icon-128"
+    },
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ],
+    "content_scripts": [{
+        "js": ["popup.js"],
+        "matches": ["<all_urls>"]
+    }]
 }
